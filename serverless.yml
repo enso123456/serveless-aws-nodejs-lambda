@@ -1,7 +1,13 @@
 service: lambda-test
+
 provider:
   name: aws
   runtime: nodejs6.10
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+      Resource: "arn:aws:s3:::lambda-test-dev-serverlessdeploymentbucket-80wk506elytf/*"
 functions:
   hello:
     handler: handler.hello
@@ -14,4 +20,10 @@ functions:
     events:
      - http:
          path: image/resize
+         method: get
+  userLogin:
+    handler: user/auth.auth
+    events:
+     - http:
+         path: user/login
          method: get

@@ -1,0 +1,22 @@
+{
+  "name": "server-less",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enso123456/serveless-aws-nodejs-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enso123456/serveless-aws-nodejs-lambda/issues"
+  },
+  "homepage": "https://github.com/enso123456/serveless-aws-nodejs-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.263.1"
+  }
+}
